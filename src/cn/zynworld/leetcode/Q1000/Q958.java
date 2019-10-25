@@ -7,31 +7,34 @@ import java.util.Queue;
 
 /**
  * @author zhaoyuening
- * @date 2019/10/21.
  */
 public class Q958 {
+    public static boolean isCompleteTree(TreeNode root) {
+        Queue<TreeNode> nodeQueue = new LinkedList<TreeNode>();
+        nodeQueue.add(root);
+        boolean hasNull = false;
+        // 按层遍历
+        while (!nodeQueue.isEmpty()) {
+            TreeNode node = nodeQueue.poll();
+            if (node == null) {
+                hasNull = true;
+                continue;
+            }
 
-	public boolean isCompleteTree(TreeNode root) {
-		Queue<TreeNode> treeNodeQueue = new LinkedList<TreeNode>();
-		treeNodeQueue.add(root);
-		boolean hasNull = false;
-		while (!treeNodeQueue.isEmpty()) {
-			TreeNode node = treeNodeQueue.poll();
-			if (node.left == null && node.right != null) {
-				return false;
-			}
+            if (hasNull) {
+                return false;
+            }
 
-			if (node.left != null) {
-				treeNodeQueue.add(node.left);
-			} else {
-				hasNull = true;
-			}
-			if (node.right != null) {
-				treeNodeQueue.add(node.right);
-			}
-		}
+            nodeQueue.add(node.left);
+            nodeQueue.add(node.right);
+        }
 
-		return true;
-	}
+        return true;
+    }
 
+    public static void main(String[] args) {
+        Queue<TreeNode> nodeQueue = new LinkedList<TreeNode>();
+        nodeQueue.add(null);
+        System.out.println(nodeQueue);
+    }
 }
