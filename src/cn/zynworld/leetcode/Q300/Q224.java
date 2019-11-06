@@ -7,79 +7,37 @@ import java.util.stream.Collectors;
 /**
  * @author zhaoyuening
  */
-public class Q241 {
+public class Q224 {
 
-    public static List<Integer> diffWaysToCompute(String input) {
-        Map<String, List<Integer>> cache = new HashMap<>();
-        cache.put("", new ArrayList<>());
-        return compute(input, cache).stream().sorted().collect(Collectors.toList());
-    }
-
-    private static List<Integer> compute(String input, Map<String, List<Integer>> cache) {
-        if (cache.containsKey(input)) {
-            return cache.get(input);
-        }
-
-        List<Integer> results = new ArrayList<>();
-        if (isNumberString(input)) {
-            results.add(Integer.parseInt(input));
-            cache.put(input, results);
-            return results;
-        }
-
-        for (int i = 0; i + 1 < input.length(); i++) {
-            char c = input.charAt(i);
-            if (isNumberChar(c) || c == ' ') continue;
-            for (Integer a : compute(input.substring(0, i), cache)) {
-                for (Integer b : compute(input.substring(i + 1), cache)) {
-                    switch (c) {
-                        case '+':
-                            results.add(a + b);
-                            break;
-                        case '-':
-                            results.add(a - b);
-                            break;
-                        case '*':
-                            results.add(a * b);
-                            break;
-                    }
-                }
-            }
-        }
-
-        cache.put(input, results);
-        return results;
-    }
-
-    public static BigDecimal getResult(String calString) {
+    public static Integer calculate(String calString) {
         // 转为后缀表达式
         List<String> cals = convert(calString);
 
-        Stack<BigDecimal> numberStack = new Stack<>();
+        Stack<Integer> numberStack = new Stack<>();
         for (int i = 0; i < cals.size(); i++) {
             String s = cals.get(i);
             // 如果是数字
             if (isNumberString(s)) {
-                numberStack.add(new BigDecimal(s));
+                numberStack.add(Integer.parseInt(s));
                 continue;
             }
 
             // 如果是符号
             // 进行四则运算
-            BigDecimal b = numberStack.pop();
-            BigDecimal a = numberStack.pop();
+            Integer b = numberStack.pop();
+            Integer a = numberStack.pop();
             switch (s.charAt(0)) {
                 case '+':
-                    numberStack.add(a.add(b));
+                    numberStack.add(a + b);
                     break;
                 case '-':
-                    numberStack.add(a.subtract(b));
+                    numberStack.add(a - b);
                     break;
                 case '*':
-                    numberStack.add(a.multiply(b));
+                    numberStack.add(a * b);
                     break;
                 case '/':
-                    numberStack.add(a.divide(b));
+                    numberStack.add(a / b);
                     break;
             }
         }
@@ -174,7 +132,6 @@ public class Q241 {
 
     public static void main(String[] args) {
         String calString = "2*3-4*5";
-        System.out.println(diffWaysToCompute(calString));
+        System.out.println(calculate(calString));
     }
-
 }
