@@ -4,6 +4,25 @@
     <list default="true" id="98b5f129-73c4-41cc-b1eb-75c22ba6bdca" name="Default" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Leetcode/cn/zynworld/leetcode/Q1000/Q1122.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Leetcode/cn/zynworld/leetcode/Q1000/Q1248.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Leetcode/cn/zynworld/leetcode/Q1000/Q958.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Leetcode/cn/zynworld/leetcode/Q1000/Q977.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Leetcode/cn/zynworld/leetcode/Q300/Q224.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Leetcode/cn/zynworld/leetcode/Q300/Q239.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Leetcode/cn/zynworld/leetcode/Q300/Q241.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Leetcode/cn/zynworld/leetcode/Q500/Q429.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Leetcode/cn/zynworld/leetcode/common/Node.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Leetcode/cn/zynworld/leetcode/common/TreeNode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Leetcode/cn/zynworld/leetcode/q100/Q10.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Leetcode/cn/zynworld/leetcode/q100/Q14.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Leetcode/cn/zynworld/leetcode/q100/Q23.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Leetcode/cn/zynworld/leetcode/q100/Q32.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Leetcode/cn/zynworld/leetcode/q100/Q62.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Leetcode/cn/zynworld/leetcode/q200/Q155$MinStack.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Leetcode/cn/zynworld/leetcode/q200/Q155.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Leetcode/cn/zynworld/leetcode/q200/Q200.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Leetcode/cn/zynworld/leetcode/q400/Q319.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/cn/zynworld/leetcode/Q1000/Q1122.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/cn/zynworld/leetcode/Q1000/Q1248.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/cn/zynworld/leetcode/Q1000/Q977.java" afterDir="false" />
@@ -11,6 +30,7 @@
       <change afterPath="$PROJECT_DIR$/src/cn/zynworld/leetcode/Q300/Q239.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/cn/zynworld/leetcode/q100/Q14.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/cn/zynworld/leetcode/q100/Q32.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/zynworld/leetcode/q100/Q53.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/cn/zynworld/leetcode/q100/Q62.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/cn/zynworld/leetcode/q200/Q155.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -125,23 +145,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Q14.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Q14.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cn/zynworld/leetcode/q100/Q14.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="44" lean-forward="true" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+            <state relative-caret-position="527">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Q224.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/zynworld/leetcode/Q300/Q224.java">
+      <file leaf-file-name="Q53.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/cn/zynworld/leetcode/q100/Q53.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -431,30 +448,29 @@
       <workItem from="1571965086315" duration="9327000" />
       <workItem from="1571980232788" duration="11754000" />
       <workItem from="1572569922117" duration="6597000" />
-      <workItem from="1572831869153" duration="13600000" />
+      <workItem from="1572831869153" duration="14437000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48833000" />
+    <option name="totallyTimeSpent" value="49670000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1450" y="-476" width="2560" height="1373" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50039715" side_tool="true" visible="true" weight="0.44122258" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50039715" side_tool="true" visible="true" weight="0.3291536" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.32962668" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
       <window_info anchor="right" id="Remote Host" order="3" />
       <window_info id="Designer" order="2" />
       <window_info anchor="bottom" id="Statistic" order="8" />
-      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.32962668" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.32962668" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49960285" visible="true" weight="0.44122258" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49960285" weight="0.44122258" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
@@ -462,7 +478,7 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3292683" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49960285" visible="true" weight="0.3291536" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1429706" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -542,13 +558,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/cn/zynworld/leetcode/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="29" selection-start-column="29" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/zynworld/leetcode/q100/Q6.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -912,8 +921,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/zynworld/leetcode/q100/Q14.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="44" lean-forward="true" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+        <state relative-caret-position="527">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/zynworld/leetcode/q100/Q53.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
         </state>
       </provider>
     </entry>
