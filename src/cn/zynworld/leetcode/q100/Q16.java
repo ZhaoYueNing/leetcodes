@@ -18,15 +18,11 @@ public class Q16 {
             int leftIndex = i + 1;
             int rightIndex = nums.length - 1;
 
-            // 若已经小于当前最小没有必要继续计算
+            // 若已经小于当前最小或者大于当前最大没有必要继续计算
             int curMinSum = nums[i] + nums[leftIndex] + nums[leftIndex + 1];
-            if (target < curMinSum) {
-                nearestSum = getNearestSum(nearestSum, curMinSum, target);
-                continue;
-            }
-
             int curMaxSum = nums[i] + nums[rightIndex] + nums[rightIndex - 1];
-            if (target > curMaxSum) {
+            if (target < curMinSum || target > curMaxSum) {
+                nearestSum = getNearestSum(nearestSum, curMinSum, target);
                 nearestSum = getNearestSum(nearestSum, curMaxSum, target);
                 continue;
             }
@@ -34,19 +30,14 @@ public class Q16 {
             // 通过对比差值大小决定下标的左右移动方向
             while (leftIndex < rightIndex) {
                 int curSum = nums[i] + nums[leftIndex] + nums[rightIndex];
-
                 nearestSum = getNearestSum(nearestSum, curSum, target);
+
                 // 尾指针左移
-                if (curSum > target){
-                    rightIndex --;
-                    continue;
-                }
+                if (curSum > target) rightIndex --;
                 // 首指针右移
-                if (curSum < target) {
-                    leftIndex++;
-                    continue;
-                }
-                break;
+                if (curSum < target) leftIndex++;
+                // 相等直接返回
+                if (curSum == target) return curSum;
             }
 
             // 对基准i去重复
